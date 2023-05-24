@@ -1,0 +1,111 @@
+:root{
+    --primary-color: #808080;
+    --secondary-color: #F4F4F4;
+    --terciary-color: #EC2D2D;
+    --primary-font: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.text-senai{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 4rem;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.text-user{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.profile-container i{
+    font-size: 64px;
+}
+main{
+    height: calc(100% - 100px);
+    display: grid;
+    grid-template-areas: 
+    "nav main";
+    grid-template-columns: 100px 1fr;
+}
+.nav-container{
+    grid-area: nav;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.text-welcome{
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    font-style: italic;
+    font-weight: 800;
+}
+.text-welcome-user{
+    color: #EC2D2D;
+}
+.main-container{
+    grid-area: main;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 82px;
+}
+.info-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 128px;
+}
+.card{
+    width: 800px;
+    height: 280px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+.header-card{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background-color: var(--terciary-color);
+    color: #FFFFFF;
+    font-family: var(--primary-font);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.2rem;
+    padding: 0 32px;
+}
+.main-card{
+    padding: 18px;
+    font-style: normal;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.bottom-bar{
+    width: 1628px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
