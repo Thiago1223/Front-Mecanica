@@ -72,14 +72,55 @@
     height: 2px;
     background-color: #808080;
 }
-table {
+
+.container_tasks {
     font-family: var(--primary-font);
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 0 82px;
 }
-th, td {
-    border-bottom: 1px solid #808080;
-    text-align: start;
-    height: 64px;
+
+.number_tasks {
+    display: flex;
+    color: var(--terciary-color);
+    font-style: italic;
+    gap: 6px;
+}
+
+.text_tasks {
+    color: #000;
+}
+
+.student_class {
+    color: var(--terciary-color);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button {
+    display: grid;
+    width: 400px;
+    grid-template-rows: 60px 100px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.top-container{
+    background-color: var(--terciary-color);
+    font-size: 2.8rem;
+    height: 80px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
