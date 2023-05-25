@@ -66,3 +66,18 @@ body{
     font-family: var(--primary-font);
     cursor: pointer;
 }
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: var(--secondary-color);
+    width: 480px;
+    height: 140px;
+    border-radius: 16px;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-style: italic;
+    cursor: pointer;
+}
