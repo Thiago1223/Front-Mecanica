@@ -49,6 +49,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 18px;
+    border-right: 2px solid #EC2D2D;
 }
 .list-container{
     display: flex;
