@@ -1,8 +1,9 @@
 'use strict'
 
 const routes = {
-    '/' : '/pages/home.html',
-    '/course' : '/pages/course.html'
+    '/'         : '/pages/home.html',
+    '/teachers' : '/pages/teachers.html',
+    '/course'   : '/pages/course.html'
 }
 
 const route = async () => {
@@ -15,7 +16,6 @@ const route = async () => {
     const html = await response.text()
 
     document.getElementById('root').innerHTML = html
-
 }
 
 window.route = route
