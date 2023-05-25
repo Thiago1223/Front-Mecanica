@@ -35,7 +35,7 @@ header{
 .profile-container i{
     font-size: 64px;
 }
-main{
+.left-container{
     height: calc(100% - 100px);
     display: grid;
     grid-template-areas: 
@@ -54,6 +54,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 64px;
+}
+.list-container img:hover{
+    transform: scale(1.1);
 }
 .text-welcome{
     font-size: 4rem;
