@@ -82,6 +82,10 @@ tr{
     width: 100%;
     border-bottom: 1px solid #808080;
 }
+tr:hover{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
 th, td {
     width: 100%;
     height: 64px;
