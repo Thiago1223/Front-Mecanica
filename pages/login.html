@@ -8,26 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4f821b9693.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="./js/router.js" defer type="module"></script>
     <title>SENAI</title>
 </head>
 <body>
     <div class="left-container">
-        <img src="./img/logo_senai.png" alt="Logo do Senai">
+        <img src="../img/logo_senai.png" alt="Logo do Senai">
     </div>
     <div class="right-container">
-        <h1 class="text-login">LOGIN</h1>
-        <div class="textfield-container">
-            <input type="email" class="textfield-login" placeholder="Email">
-            <i class="fa-solid fa-envelope"></i>
+        <a href="./home.html">
+            <div class="card">
+                <img src="../img/login_admin.png" alt="Icone de login para o adiministrador">
+                <p class="text-card">ADMINISTRADOR</p>
+            </div>
+        </a>
+        <div class="card">
+            <img src="../img/login_teacher.png" alt="Icone de login para o professor">
+            <p class="text-card">PROFESSOR</p>
         </div>
-        <div class="textfield-container">
-            <input type="password" class="textfield-login" placeholder="Senha">
-            <i class="fa-solid fa-lock"></i>
-        </div>
-        <a href="./pages/login.html" class="button-container">ENTRAR</a>
     </div>
 </body>
 </html>
