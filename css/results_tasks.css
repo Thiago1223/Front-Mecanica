@@ -56,48 +56,33 @@
     justify-content: center;
 }
 
-.container_result_tasks {
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 82px;
-}
-
-.results_type {
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--terciary-color);
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
-}
-
-.assessments {
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--terciary-color);
+.subtitle_container {
     display: flex;
     width: 100%;
-    gap: 38px;
-    padding: 0 82px;
     justify-content: end;
 }
 
-.criterion {
-    width: 42vw;
+.container_subtitle {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    width: 420px;
+    font-weight: 700;
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 82px;
 }
 
-.evaluation_teacher {
-    width: 1vw;
+.subtitle_content {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    justify-content: space-between;
 }
 
-.obtained_value {
-    width: 40vw;
+span {
+    color: var(--terciary-color);
 }
 
 table {

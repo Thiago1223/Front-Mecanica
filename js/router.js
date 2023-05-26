@@ -5,7 +5,8 @@ const routes = {
     '/teachers' : '/pages/teachers.html',
     '/course' : '/pages/course.html',
     '/class' : '/pages/class.html',
-    '/discipline' : '/pages/discipline.html'
+    '/discipline' : '/pages/discipline.html',
+    '/student' : '/pages/students.html'
 }
 
 const route = async () => {

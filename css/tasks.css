@@ -124,3 +124,44 @@
     justify-content: center;
     border-radius: 8px;
 }
+
+/* MOBILE */
+@media (max-width:640px){
+    .main-container{
+        gap: 72px;
+    }
+    .title-container img{
+        width: 64px;
+    }
+    .title-container p{
+        font-size: 1.4rem;
+    }
+    .header-container{
+        padding: 0 16px;
+    }
+    .main-container{
+        padding: 16px 0px;
+        gap: 16px;
+    }
+    .buttons-container{
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        gap: 12px;
+    }
+    .button-add{
+        width: 48px;
+        height: 48px;
+    }
+    .button-edit{
+        width: 48px;
+        height: 48px;
+    }
+    .button-delete{
+        width: 48px;
+        height: 48px;
+    }
+    .buttons-container img{
+        width: 24px;
+    }
+}
