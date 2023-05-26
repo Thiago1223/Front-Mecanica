@@ -48,6 +48,7 @@ header{
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
+    width: 100%;
     padding: 18px;
     border-right: 2px solid #EC2D2D;
 }
@@ -55,6 +56,10 @@ header{
     display: flex;
     flex-direction: column;
     gap: 64px;
+}
+.list-container li{
+    display: flex;
+    align-items: center;
 }
 .list-container img:hover{
     transform: scale(1.1);
@@ -82,7 +87,7 @@ header{
     align-items: center;
     gap: 128px;
 }
-.card{
+.card-home{
     width: 800px;
     height: 280px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,4 +117,70 @@ header{
     width: 1628px;
     height: 2px;
     background-color: var(--primary-color);
+}
+
+/* MOBILE */
+@media (max-width:640px){
+    header{
+        padding: 0 12px;
+    }
+    .text-senai{
+        font-size: 2rem;
+    }
+    .text-user{
+        font-size: 1rem;
+    }
+    .profile-container i{
+        font-size: 36px;
+    }
+    .left-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-container{
+        height: 80px;
+        border-right: none;
+        border-bottom: 2px solid var(--terciary-color);
+        width: 100%;
+        align-items: center;
+    }
+    .list-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .list-container img{
+        width: 32px;
+    }
+    .main-container{
+        padding: 32px 0;
+        gap: 32px;
+    }
+    .text-welcome{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .info-container{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .info-container img{
+        width: 360px;
+    }
+    .card-home{
+        width: 320px;
+        height: 146px;
+    }
+    .header-card{
+        font-size: 1.6rem;
+    }
+    .main-card{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .bottom-bar{
+        margin-top: 32px;
+        width: 100%;
+    }
 }
