@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="../css/users.css">
+<link rel="stylesheet" href="../css/modal.css">
+<link rel="stylesheet" href="../css/button.css">
+<script src="../js/modal.js" defer type="module"></script>
 
 <div class="container">
     <div class="main-container">
@@ -9,34 +12,47 @@
                 <p>Professores</p>
             </div>
             <div class="buttons-container">
-                <div class="button-add">
+                <div class="button-add" id="cadastrarProfessor">
                     <img src="../img/button_add.png" alt="Botão para adicionar curso">
                 </div>
-                <div class="button-edit">
+                <div class="button-edit" id="editarProfessor">
                     <img src="../img/button_edit.png" alt="Botão para editar curso">
                 </div>
-                <div class="button-delete">
+                <div class="button-delete" id="apagarProfessor">
                     <img src="../img/button_delete.png" alt="Botão para deletar curso">
                 </div>
             </div>
         </div>
         <div class="line"></div>
-        <table>
-            <tr>
-              <th class="name_title">Nome</th>
-              <th class="email_title">Email</th>
-              <th class="discipline_title">Disciplina</th>
-            </tr>
-            <tr>
-              <td class="name_teacher">Thiago Freitas Vilariço</td>
-              <td class="email_teacher">thiago@mail.com</td>
-              <td class="discipline_teacher">PWFE</td>
-            </tr>
-            <tr>
-              <td class="name_teacher">Matheus Alves Reis da Silva</td>
-              <td class="email_teacher">mts020@gmail.com</td>
-              <td class="discipline_teacher">LIMA</td>
-            </tr>
-          </table>
+        <table id="tableTeacher" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Disciplina</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h1 class="text-senai">SENAI</h1>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Professor" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail do Professor" required>
+                    <input type="date" id="data_nascimento" class="modal-field" placeholder="Data de Nascimento do Professor" required>
+                    <input type="text" id="disciplina" class="modal-field" placeholder="Disciplina do Professor" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
     </div>
 </div>
