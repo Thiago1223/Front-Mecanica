@@ -33,10 +33,6 @@
     color: var(--primary-color);
     align-items: center;
 }
-.buttons-container{
-    display: flex;
-    gap: 32px;
-}
 .button-add{
     width: 100px;
     height: 100px;
@@ -48,8 +44,8 @@
     cursor: pointer;
 }
 .button-edit{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: #EED600;
     display: flex;
@@ -57,9 +53,15 @@
     align-items: center;
     cursor: pointer;
 }
+.button-edit:hover {
+    scale: 1.1;
+}
+.button-delete:hover {
+    scale: 1.1;
+}
 .button-delete{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: #D90505;
     display: flex;
@@ -85,7 +87,6 @@
     grid-template-rows: 200px 100px;
     font-family: var(--primary-font);
     font-weight: 700;
-    cursor: pointer;
 }
 .top-container{
     background-color: var(--terciary-color);
@@ -95,7 +96,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -999;
 }
 .bottom-container{
     background-color: #FFFFFF;
@@ -104,9 +104,11 @@
     font-size: 2.2rem;
     color: var(--primary-color);
     display: flex;
+    padding: 0 10px;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
-    z-index: -999;
+    justify-content: flex-end;
+    z-index: 999;
 }
 
 /* MOBILE */
