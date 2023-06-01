@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="../css/users.css">
+<script src="../js/router.js" defer type="module"></script>
 
 <div class="container">
     <div class="main-container">
@@ -14,49 +15,30 @@
             <div class="container_subtitle">
                 <p class="evaluation_text">Avaliação</p>
                 <div class="subtitle_content">
-                    <span>A</span><p class="text_evaluation_student">- Aluno</p>
-                    <span>P</span><p class="text_evaluation_teacher">- Professor</p>
+                    <p><span>A</span> - Aluno</p>
+                    <p><span>P</span> - Professor</p>
                 </div>
             </div>
         </div>
-        <table>
-            <tr>
-                <th>Critério</th>
-                <th>Resultado Desejado</th>
-                <th>Resultado Obtido</th>
-                <th>A</th>
-                <th>P</th>
-            </tr>
-            <tr>
-                <td class="criterion">Medir a peça e...</td>
-                <td class="desired_value">140</td>
-                <td class="obtained_value">100</td>
-                <td class="evaluation_student">S</td>
-                <td class="evaluation_teacher">S</td>
-            </tr>
-            <tr>
-                <td class="criterion">Medir a peça e...</td>
-                <td class="desired_value">140</td>
-                <td class="obtained_value">100</td>
-                <td class="evaluation_student">S</td>
-                <td class="evaluation_teacher">S</td>
-            </tr>
-            <tr>
-                <td class="criterion">Medir a peça e...</td>
-                <td class="desired_value">140</td>
-                <td class="obtained_value">100</td>
-                <td class="evaluation_student">S</td>
-                <td class="evaluation_teacher">S</td>
-            </tr>
-            <tr>
-                <td class="criterion">Medir a peça e...</td>
-                <td class="desired_value">140</td>
-                <td class="obtained_value">100</td>
-                <td class="evaluation_student">S</td>
-                <td class="evaluation_teacher">S</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <ul class="list-title">
+                <li class="text-title">Critério</li>
+                <li class="text-title">Resultado Desejado</li>
+                <li class="text-title">Resultado Obtido</li>
+                <li class="text-title">A</li>
+                <li class="text-title">P</li>
+            </ul>
+            <ul class="list-content">
+                <li class="text-content">Medir a peça e...</li>
+                <li class="text-content">140</li>
+                <li class="text-content">100</li>
+                <li class="text-content">S</li>
+                <li class="text-content">S</li>
+            </ul>
+        </div>
         <div class="container-buttons">
-            <a href="./time_record.html" class="button-time-record">REGISTRO DE TEMPO</a>
+            <a href="/time" onclick="route()" class="button-time-record">REGISTRO DE TEMPO</a>
             <a href="#" class="button-save">SALVAR</a>
         </div>
+    </div>
+</div>

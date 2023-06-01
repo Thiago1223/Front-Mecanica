@@ -15,6 +15,7 @@
     flex-direction: column;
     gap: 48px;
     padding: 48px 0px;
+    align-items: center;
 }
 .header-container{
     display: flex;
@@ -72,7 +73,6 @@
     height: 2px;
     background-color: #808080;
 }
-
 .container_tasks {
     font-family: var(--primary-font);
     font-size: 3rem;
@@ -82,47 +82,36 @@
     width: 100%;
     padding: 0 82px;
 }
-
 .number_tasks {
     display: flex;
     color: var(--terciary-color);
     font-style: italic;
     gap: 6px;
 }
-
 .text_tasks {
     color: #000;
 }
-
 .student_class {
     color: var(--terciary-color);
 }
-
 .button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .button {
-    display: grid;
     width: 400px;
-    grid-template-rows: 60px 100px;
-    font-family: var(--primary-font);
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.top-container{
-    background-color: var(--terciary-color);
-    font-size: 2.8rem;
     height: 80px;
+    background-color: var(--terciary-color);
+    font-family: var(--primary-font);
+    font-size: 2.8rem;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
 
 /* MOBILE */
@@ -163,5 +152,14 @@
     }
     .buttons-container img{
         width: 24px;
+    }
+    .container_tasks{
+        font-size: 1rem;
+        padding: 0 32px;
+    }
+    .button{
+        width: 280px;
+        height: 48px;
+        font-size: 1.6rem;
     }
 }
