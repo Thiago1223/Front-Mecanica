@@ -133,6 +133,64 @@ span {
     color: var(--terciary-color);
 }
 .container-buttons {
+}
+.list-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 1px solid #000000;
+    font-size: 1.8rem;
+}
+.text-title{
+    width: 280px;
+    text-align: center;
+}
+.list-content{
+    display: flex;
+    gap: 64px;
+    justify-content: end;
+    padding: 0 82px;
+    width: 100%;
+}
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.list-content:hover{
+    background-color: var(--secondary-color);
+}
+.text-content{
+    width: 280px;
+    text-align: center;
+}
+.subtitle_container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.container_subtitle {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 82px;
+}
+.subtitle_content {
+    display: flex;
+    gap: 12px;
+}
+span {
+    color: var(--terciary-color);
+}
+.container-buttons {
     display: flex;
     gap: 64px;
     justify-content: end;
@@ -366,6 +424,20 @@ span {
     .predicted_time_title{
         font-size: 1.2rem;
     }
+  
+    }
+    .button-save{
+        width: 140px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .time_record_title{
+        font-size: 1.2rem;
+    }
+    .predicted_time_title{
+        font-size: 1.2rem;
+    }
+
     .table-container{
         padding: 0 16px;
     }
