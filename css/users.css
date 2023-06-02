@@ -4,6 +4,13 @@
     --terciary-color: #EC2D2D;
     --primary-font: 'Montserrat', sans-serif;
 }
+.link-route-student{
+    width: 100%;
+    height: 100%;
+}
+.link-route-student:hover {
+    color: var(--terciary-color);
+}
 .container{
     display: flex;
 }
@@ -99,7 +106,6 @@
     align-items: center;
     font-weight: 500;
     border-bottom: 1px solid #000000;
-    cursor: pointer;
     font-size: 1.6rem;
 }
 .list-content:hover{
@@ -286,6 +292,10 @@ span {
     cursor: pointer;
     color: #FFFFFF;
 }
+.container-link .text-content-name:hover {
+    cursor: pointer;
+    color: var(--terciary-color);
+}
 
 /* MOBILE */
 @media (max-width:640px){
@@ -369,7 +379,7 @@ span {
     }
     .list-content{
         height: 32px;
-        font-size: .8rem;
+        font-size: .6rem;
     }
     .buttons-container{
         position: fixed;
@@ -382,12 +392,12 @@ span {
         height: 48px;
     }
     .button-edit{
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 26px;
     }
     .button-delete{
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 26px;
     }
     .buttons-container img{
         width: 24px;

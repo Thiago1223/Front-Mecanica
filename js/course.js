@@ -10,8 +10,9 @@ const criarCardCurso = (curso) => {
 
     const topContainer = document.createElement('a')
     topContainer.classList.add('top-container')
-    topContainer.textContent = curso.nome
     topContainer.setAttribute('href', '/class')
+    topContainer.textContent = curso.nome
+    topContainer.onclick = route
 
     const bottomContainer = document.createElement('div')
     bottomContainer.classList.add('bottom-container')
@@ -27,8 +28,8 @@ const criarCardCurso = (curso) => {
     buttonDelete.classList.add('button-delete')
 
     const imgDelete = document.createElement('img')
-    imgDelete.src = '../img/button_delete.png'
     imgDelete.classList.add('img-delete')
+    imgDelete.src = '../img/button_delete.png'
    
     card.append(topContainer, bottomContainer)
     bottomContainer.append(buttonEdit, buttonDelete)
